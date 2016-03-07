@@ -9,6 +9,6 @@ while True:
 		if not data: break
 		#print "%s" %data
 		if data == 'close':
-			conn.close()
 			break
 		conn.send(data)
+	conn.close()	
